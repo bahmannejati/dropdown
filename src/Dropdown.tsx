@@ -154,6 +154,7 @@ function Dropdown(props: DropdownProps, ref) {
       popup={getMenuElementOrLambda()}
       onPopupVisibleChange={onVisibleChange}
       getPopupContainer={getPopupContainer}
+      forceRender
     >
       {renderChildren()}
     </Trigger>
