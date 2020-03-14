@@ -122,7 +122,7 @@ function Dropdown(props: DropdownProps, ref) {
     const { children } = props;
     const childrenProps = children.props ? children.props : {};
     const childClassName = classNames(childrenProps.className, getOpenClassName());
-    return triggerVisible && children
+    return children
       ? React.cloneElement(children, {
           className: childClassName,
         })
